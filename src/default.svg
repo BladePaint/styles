@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  viewBox="0 0 8 0.625"
+  preserveAspectRatio="xMinYMid meet">
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!--                      DO NOT EDIT ABOVE THIS LINE                        -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  <symbol id="blade_design" viewBox="0 0 1 1"
+    overflow="visible"
+    preserveAspectRatio="xMinYMid slice">
+
+  </symbol>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!--                      DO NOT EDIT BELLOW THIS LINE                       -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+  <defs>
+    <linearGradient
+      id="blade_color"><stop stop-color="white"/></linearGradient>
+    <linearGradient
+      id="background"><stop stop-color="grey"/></linearGradient>
+    <linearGradient
+      id="shaft_color"><stop stop-color="black"/></linearGradient>
+    <linearGradient
+      id="sleeve_color"><stop stop-color="#afbd22"/></linearGradient>
+    <linearGradient
+      id="handle_color"><stop stop-color="#afbd22"/></linearGradient>
+    <linearGradient
+      id="collar_color"><stop stop-color="#376ab1"/></linearGradient>
+      <linearGradient
+      id="votrex_edge_color"><stop stop-color="black"/></linearGradient>
+  </defs>
+  <defs>
+    <path id="blade" d="
+      m1.3,0v0.05c -0.1 0.1 -0.1 0.1 -0.15 0.3 0 0 -0.8 0.15 -1.15 -0.05 l 0.05 -0.5 c 0.2 -0.02 0.4 -0.05 1.25 0.15 v0.05 z" />
+    <path id="votrex_edge" d="
+      m1.5,0z m-1.3,0.154 l-0.06,0.48 l0.06,0.015 l0.06,-0.5 z"/>
+    <path id="sleeve" d="
+      m0,0z
+      m0,0 v0.075 h0.75 v-0.15 h-0.75 z"/>
+    <path id="shaft" d="
+      m0,0 v0.04 l5,0.01 v-0.1 l-5,0.01 z
+      m5,0 v0.05 l1,-0.02 0,-0.06 -1,-0.02 v0.04 z
+      m1,0 v0.03 h0.4 v-0.06 h-0.4 z" />
+    <path id="handle" d="
+      m0,0 v0.06 h0.05 v-0.10 h-0.05 v0.4z
+      m0.05,0 v0.04h0.3v-0.08 h-0.3 v0.04z
+      m0.3,0.04 c0.05,0,0.05,-0.08,0,-0.08z" />
+    <path id="collar" d="
+      m0,0 v0.125 h0.075 v-0.25 h-0.075 z"/>
+    <clipPath id="blade_path"><use href="#blade" /></clipPath>
+  </defs>
+
+<g transform="translate(0,0.215) translate(8, 0) scale(-1, 1)">
+  <g transform="translate(1.3,0)">
+  <use href="#shaft"  x="0.0" fill="url(#shaft_color)"  />
+  <use href="#sleeve" x="3.0" fill="url(#sleeve_color)" />
+  <use href="#collar" x="3.5" fill="url(#collar_color)" />
+  <use href="#handle" x="6.3" fill="url(#handle_color)" />
+</g>
+<use href="#blade"
+  stroke="black" stroke-width="0.001"
+  width="1.5"
+  height="1" />
+  <use href="#blade_design"
+    clip-path="url(#blade_path)"
+    width="1.5"
+    height="1" />
+</g>
+</svg>
